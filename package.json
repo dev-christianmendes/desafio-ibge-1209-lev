@@ -1,0 +1,19 @@
+{
+  "name": "desafio-ibge-1209-lev",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dependências de qualidade (commitlint semântico).",
+  "scripts": {
+    "commitlint": "commitlint",
+    "test:unit": "pytest -m 'not e2e'"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}

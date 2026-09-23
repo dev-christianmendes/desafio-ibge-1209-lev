@@ -1,1 +1,21 @@
+# Ambiente virtual
 .venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+*.coverage
+
+# Artefatos de execução (apenas logs; CSV e evidências são versionados)
+logs/
+
+# Node / commitlint
+node_modules/
+
+# Sistema
+.DS_Store
