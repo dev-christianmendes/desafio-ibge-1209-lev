@@ -239,8 +239,8 @@ Total 60+ (Brasil): 32.113.490
 ### Sobre o SonarQube
 
 Não tenho `SONAR_TOKEN` configurado neste repositório. A etapa do SonarQube no
-`ci.yml` fica desabilitada enquanto o secret não existir (`if: env.SONAR_TOKEN
-!= ''`), então ela nunca bloqueia o pipeline — deixei montada apenas para
+`ci.yml` pula enquanto o secret não existir (condicional por passo), então ela
+nunca bloqueia o pipeline — deixei montada apenas para
 documentar o padrão de análise que sigo (cobertura 100%, duplicação < 3% e
 vulnerabilidades em zero). Para ativá-la, basta adicionar `SONAR_TOKEN` (e
 `SONAR_HOST_URL`, se não for o SonarCloud público) nos secrets do repositório.
